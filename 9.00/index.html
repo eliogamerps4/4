@@ -1,0 +1,331 @@
+<html manifest="offlineCache.manifest">
+	<style>
+		.button {
+	border: 1.5px solid #000000;		
+       background-color: #630000;  
+       border-radius: 5px;
+       color: white;
+       padding: .5em;
+       text-decoration: none;
+       height:100%;
+       display:inline-table;
+       font-family: system-ui;
+      }
+
+        .button:focus,
+        .button:hover {
+         background-color: red;
+          color: White;
+           }
+		
+
+		.titlehead {
+		  background-color: #b90b0b;  
+		  border-radius: 5px;
+		  color: black;
+		  padding: .5em;
+		  text-decoration: none;
+		  text-align: center;
+		  margin-top: -10px;
+		  margin-bottom: -10px;
+		  font-family: system-ui;
+		}
+
+		.titlehead:focus,
+		.titlehead:hover {
+		  background-color: #f20e0e;
+		  color: black;
+		}
+
+		.bg {
+		  /* The image used */
+		  background-image: url("ps4.jpg");
+		  font-family: system-ui;
+		  /* Center and scale the image nicely */
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+	</style>
+	<head>
+		<title>PS4 Pirateo 9.00 (Elio)</title>
+		<script>
+			function allset() {
+				document.getElementById("progress").innerHTML="Exploit + Goldhen Cargado Y Listo ✔";
+			}
+		</script>
+		<script src="int64.js"></script>
+		<script src="rop.js"></script>
+		<script src="kexploit.js"></script>
+		<script src="webkit.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body class="bg">
+		<script>
+			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Esperando Cache por favor espere!!"};
+			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML="Cargando Cahe Por favor Espere "+(Math.round(100*(a.loaded/a.total)))+"% Completado"};
+			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Cache Cargado con Exito!!";setTimeout(function(){document.getElementById("progress").innerHTML="La pagina se Guardo con Exito en el navegador Puede apagar el Internet "; }, 1500);};
+		</script>
+		<script>
+			function load_PS4Debug(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/ps4debug.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_permanentuart(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/permanentuart.bin";
+				LoadviaGoldhen(PLfile);
+			}
+                        function load_fan(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/fan50.js";
+				LoadviaGoldhen(PLfile);
+			}
+                        
+			function load_fan60(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/fan60.bin";
+				LoadviaGoldhen(PLfile);
+			}
+                        
+			function load_fan65(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/fan65.bin";
+			}
+                        function load_fan70(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/fan70.bin";
+				LoadviaGoldhen(PLfile);
+			}
+                        function load_fan80(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/fan80.bin";
+				LoadviaGoldhen(PLfile);	
+			}
+
+			function load_App2USB(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/app2usb.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_BackupDB(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/backupdb.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_AppDumper(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/appdumper.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_KernelDumper(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/kerneldumper.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_ModuleDumper(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/mdumper.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_RestoreDB(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/restoredb.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_DisableASLR(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/disableaslr.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_DisableUpdates(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/disableupdates.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_EnableUpdates(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/enableupdates.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_EnableBrowser(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/enablebrowser.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_ExitIDU(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/exitidu.bin";
+				LoadviaGoldhen(PLfile);
+			}
+			  
+			function load_FTP(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/ftp.bin";
+				LoadviaGoldhen(PLfile);
+			}
+			  
+			function load_HistoryBlocker(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/historyblocker.bin";
+				LoadviaGoldhen(PLfile);
+			}
+			  
+			function load_RIFRenamer(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/rifrenamer.bin";
+				LoadviaGoldhen(PLfile);
+			}
+			  
+			function load_Orbis(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/Orbis-Toolbox-900.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_Linux(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/LinuxLoader.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_ToDex(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/ToDex.bin";
+				LoadviaGoldhen(PLfile);
+			}
+
+			function load_WebRTE(){
+				progress.innerHTML="enviando payload por favor Espere !!";
+				PLfile = "payloads/WebRTE.bin";
+				LoadviaGoldhen(PLfile);
+			}
+			
+			function load_Both(){
+				document.getElementById("progress").innerHTML="Cargando Exploit + Goldhen.. Por favor Espere !!"
+				setTimeout(poc, 1500);
+			}
+			
+			function load_payload(payload){
+				if(payload == "app2usb"){
+					load_App2USB();
+				}else if(payload == "backup"){
+					load_BackupDB();
+				}else if(payload == "fan60"){
+					load_fan60();
+				}else if(payload == "fan65"){
+					load_fan65();
+				}else if(payload == "fan70"){
+					load_fan70();
+				}else if(payload == "fan80"){
+					load_fan80();
+				}else if(payload == "disableupdates"){
+					load_DisableUpdates();
+				}else if(payload == "dumper"){
+					load_AppDumper();
+				}else if(payload == "enablebrowser"){
+					load_EnableBrowser();
+				}else if(payload == "enableupdates"){
+					load_EnableUpdates();
+				}else if(payload == "exitidu"){
+					load_ExitIDU();
+				}else if(payload == "ftp"){
+					load_FTP();
+				}else if(payload == "orbis"){
+					load_Orbis();
+				}else if(payload == "historyblocker"){
+					load_HistoryBlocker();
+				}else if(payload == "disableaslr"){
+					load_DisableASLR();
+				}else if(payload == "kerneldumper"){
+					load_KernelDumper();
+				}else if(payload == "linuxloader"){
+					load_Linux();
+				}else if(payload == "moduledumper"){
+					load_ModuleDumper();
+				}else if(payload == "permanentuart"){
+					load_permanentuart();
+				}else if(payload == "ps4debug"){
+					load_PS4Debug();
+				}else if(payload == "restore"){
+					load_RestoreDB();
+				}else if(payload == "rifrenamer"){
+					load_RIFRenamer();
+				}else if(payload == "todex"){
+					load_ToDex();
+				}else if(payload == "webrte"){
+					load_WebRTE();
+				}
+			}
+		</script>
+	        <h1 id="progress" class="titlehead">Pirateo de PS4 version 9.00..  Activar Exploit + Goldhen para Piratear..</h1><hr><br>
+		<input type="hidden" id="psip" value="localhost"/>
+		<div>
+			<table align="center" style="width:600px;margin-top:30px;">
+			<tr>
+			<td align="center" id="exploit" colspan="2">
+			<a href="#" class="button" onclick="load_Both(); return false" style="width:43%">Exploit + GoldHEN </a>
+			</td>
+			</tr>
+			<tr><td><br/></td></tr>
+			<tr>
+			<td colspan="2" align="center"><hr><br></td>
+			</tr>
+			<tr>
+			<td align="center" colspan="2"><a href="#" class="button" onclick="load_payload('app2usb'); return false" style="width:43%">App a USB</a>
+			<a href="#" class="button" onclick="load_payload('ftp'); return false" style="width:43%">Activar FTP</a></td>
+			</tr><tr><td><br/></td></tr>
+			<tr>
+			<td align="center" colspan="2"><a href="#" class="button" onclick="load_payload('disableupdates'); return false" style="width:43%">Parar actualizacion</a>
+			<a href="#" class="button" onclick="load_payload('enableupdates'); return false" style="width:43%">Activar Actualizacion</a></td>
+			</tr><tr><td><br/></td></tr>
+			<tr>
+			<td align="center" colspan="2"><a href="#" class="button" onclick="load_payload('moduledumper'); return false" style="width:43%"> Module Dumper</a>
+			<a href="#" class="button" onclick="load_payload('kerneldumper'); return false" style="width:43%">dumpear kenel</a></td>
+			</tr><tr><td><br/></td></tr>
+			<tr>
+			<tr>
+			<td align="center" colspan="2"><a href="#" class="button" onclick="load_payload('restore'); return false" style="width:43%">Restaurar copia</a>
+			<a href="#" class="button" onclick="load_payload('backup'); return false" style="width:43%">Copia de seguridad</a></td>
+			</tr><tr><td><br/></td></tr>
+			<tr>
+			<td align="center" colspan="2"><a href="#" class="button" onclick="load_payload('exitidu'); return false" style="width:43%">Salir Modo IDU</a>
+			<a href="#" class="button" onclick="load_payload('disableaslr'); return false" style="width:43%">Disable ASLR</a></td>
+			</tr><tr><td><br/></td></tr>
+			<tr>
+			<td align="center" colspan="2"><a href="#" class="button" onclick="load_payload('todex'); return false" style="width:43%">Modo-DEX</a>
+			<a href="#" class="button" onclick="load_payload('permanentuart'); return false" style="width:43%">Permanent UART</a></td>
+			</tr><tr><td><br/></td></tr>
+			<tr>
+			<td align="center" colspan="2"><a href="https://eliogamerps4.github.io/trucos/" class="button" return false" style="width:43%">WEB de trucos</a>
+			<a href="#" class="button" onclick="load_payload('fan60'); return false" style="width:43%;border-radius: 5px 0px 0px 5px;">Fan -60 °C</a>
+			<select id="temp" style="height:42px;border-radius: 0px 5px 5px 0px;position: absolute;" class="button">
+	               <option value="40">40°C</option><option value="41">41°C</option><option value="42">42°C</option><option value="43">43°C</option><option value="44">44°C</option><option value="45">45°C</option><option value="46">46°C</option><option value="47">47°C</option><option value="48">48°C</option><option value="49">49°C</option><option value="50">50°C</option><option value="51">51°C</option><option value="52">52°C</option><option value="53">53°C</option><option value="54">54°C</option><option value="55">55°C</option><option value="56">56°C</option><option value="57">57°C</option><option value="58">58°C</option><option value="59">59°C</option><option value="60">60°C</option><option value="61">61°C</option><option value="62">62°C</option><option value="63">63°C</option><option value="64">64°C</option><option value="65">65°C</option><option value="66">66°C</option><option value="67">67°C</option><option value="68">68°C</option><option value="69">69°C</option><option value="70" selected>70°C</option><option                        value="71">71°C</option><option value="72">72°C</option><option value="73">73°C</option><option value="74">74°C</option><option value="75">75°C</option><option value="76">76°C</option><option value="77">77°C</option><option value="78">78°C</option><option value="79">79°C</option>
+                       </select>
+                       </td>
+			<tr>
+			</tr><tr><td><br/></td></tr>
+			<tr>
+			<td align="center" colspan="2"><a href="#" class="button" onclick="load_payload('fan70'); return false" style="width:43%">Fan 70°C</a>
+			<a href="#" class="button" onclick="load_payload('fan80'); return false" style="width:43%">Fan -80°C</a></td>
+			</tr>
+			</tr><tr><td><br/></td></tr>
+			<tr>
+			<td align="center" colspan="2"><a href="#" class="button" onclick="load_payload('enablebrowser'); return false" style="width:43%">Activar Navegador</a>
+			<a href="#" class="button" onclick="load_payload('historyblocker'); return false" style="width:43%">History Blocker</a></td>
+			</tr>
+			</table></div>
+	</body>
+</html>
